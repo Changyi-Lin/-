@@ -10,17 +10,17 @@
     text-align: center;
     margin-left: 5%;
     margin-top: 50px;
-    width: 50%;
+    width: 60%;
     height: 550px;
     border-color: black;
     border-radius: 10px;
     float: left;
     background-color: whitesmoke;
-    padding: 0px 15px 0px 15px;
+    padding: 0px 30px 0px 30px;
 }
 
 canvas{
-    margin-left: 0%;
+    margin-top: 50px;
     width: 50px;
     height: 80%;
     background-color: #ffffff;
@@ -34,7 +34,7 @@ h1{
 .Side{
     margin-right: 5%;
     margin-top: 50px;
-    width: 35%;
+    width: 25%;
     text-align: center;
     height: auto;
     float: right;
@@ -52,7 +52,7 @@ h1{
     font-size: 25px;
     font-weight: 400;
     text-align: left;
-    margin-left: 180px;
+    margin-left: 80px;
     float: left;
 }
 
