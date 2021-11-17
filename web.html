@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="web.css">
+    <title>雲端電源監控系統</title>
+</head>
+<body style="background-color: #1AB394;">
+    <div class="Plot">
+        <h1>Plot</h1>
+        <canvas id="myChart"></canvas>
+    </div>
+    <div class="Side">
+        <div class="Digital">
+            <h1>Digital</h1>
+            <div>
+                <h3 id="Watt-Text">Watt : </h3>
+                <h5 id="Watt-Value">10</h5>
+                <h5 id="Watt-Unit">kW</h5>
+            </div>
+            <div>
+                <h3 id="Time-Text">Time : </h3>
+                <h5 id="Time-Value">2021-11-15</h5>
+            </div>
+        </div>
+        <div class="Control">
+            <h1>Control</h1>
+            <div>
+                <button id="On">On</button>
+            </div>
+            <div>
+                <button id="Off">Off</button>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+    <script language="JavaScript" type="text/javascript" src="web.js"></script>
+</body>
+</html>
