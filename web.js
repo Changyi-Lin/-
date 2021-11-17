@@ -1,5 +1,9 @@
-var Labels = ['12AM','1AM','2AM','3AM','4AM','5AM','6AM','7AM','8AM','9AM','10AM','11AM','12PM','1PM','2PM','3PM','4PM','5PM','6PM','7PM','8PM','9PM','10PM','11PM']
-var Datas  = [10, 20, 30, 55, 66, 77, 25, 80, 30, 22, 22, 30, 10, 50, 80, 100, 30, 10, 70, 20, 30, 20, 33, 55]
+const Labels = ['12AM','1AM','2AM','3AM','4AM','5AM','6AM','7AM','8AM','9AM','10AM','11AM','12PM','1PM','2PM','3PM','4PM','5PM','6PM','7PM','8PM','9PM','10PM','11PM']
+var Datas = []
+// for(i=0; i<24; i++) Datas[i] = 0;
+
+
+    
 var ctx = document.getElementById('myChart');
 var myChart = new Chart(ctx, {
   type       : 'line',
@@ -8,7 +12,7 @@ var myChart = new Chart(ctx, {
     datasets: [{
       label           : '用電量(kW)',
       data            : Datas,
-      backgroundColor : '#8BCCFF',
+      backgroundColor : 'rgba(111, 163, 204, 0.5)',
       borderColor     : '#6FA3CC',
       scales: 
       {
@@ -24,3 +28,10 @@ var myChart = new Chart(ctx, {
     }]
   }
 });
+
+var Timer = setInterval(function(){updateData(myChart,Math.floor(Math.random() * 100))},1000)
+
+function updateData(chart,data) {
+    Datas.push(data)
+    chart.update();
+}
