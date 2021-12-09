@@ -8,36 +8,69 @@
     <title>雲端電源監控系統</title>
 </head>
 <body style="background-color: #ffffff;">
-    <div class="Title">
-        <h5>雲端電源監控系統</h5>
-    </div>
-    <div class="Plot">
-        <h1>Plot</h1>
-        <canvas id="myChart"></canvas>
-    </div>
-    <div class="Side">
-        <div class="Digital">
-            <h1>Digital</h1>
-            <div>
-                <h3 id="Watt-Text">Watt : </h3>
-                <h5 id="Watt-Value">10</h5>
-                <h5 id="Watt-Unit">kW</h5>
-            </div>
-            <div>
-                <h3 id="Time-Text">Time : </h3>
-                <h5 id="Time-Value">2021-11-15</h5>
+    <!------Nav Bar----->
+    <nav class="Title">
+        <div class="max-size">
+            <div class="logo"><img src="YunTech_Logo.png" ></div>
+            <ul class="menu">
+                <li><label id="sign-in">SIGN IN</label></li>
+            </ul>
+        </div>
+    </nav>
+    <!-----Home Section----->
+    <section class="home" id="home"></section>
+    <section class="home-content" id="home-content">
+        <div class="max-size">
+            <div class="content">
+                <div class="text">NYUST</div>
+                <div class="subtext">Power Detection</div>
             </div>
         </div>
-        <div class="Control">
-            <h1>Control</h1>
-            <div>
-                <button id="On">On</button>
+    </section>
+
+    <!-----Main Project----->
+    <div class="main">
+        <div class="Plot">
+            <div class="plot-text">用電量圖表</div>
+            <div class="select">
+                <div class="select-text">檢視電錶:</div>
+                <button class="shelly1" id="shelly1">Shelly1</button>
+                <button class="shelly2" id="shelly2">Shelly2</button>
+                <button class="shelly3" id="shelly3">Shelly3</button>
             </div>
-            <div>
-                <button id="Off">Off</button>
+            <div class="range">
+                <div class="range-text">檢視範圍:</div>
+                <button class="day-before">過去一天</button>
+                <button class="week-before">過去一週</button>
+                <button class="month-before">過去一月</button>
+            </div>
+            <canvas id="myChart"></canvas>
+        </div>
+        <div class="Side">
+            <div class="Digital">
+                <h1>Digital</h1>
+                <div>
+                    <h3 id="Watt-Text">Watt : </h3>
+                    <h5 id="Watt-Value">10</h5>
+                    <h5 id="Watt-Unit">kW</h5>
+                </div>
+                <div>
+                    <h3 id="Time-Text">Time : </h3>
+                    <h5 id="Time-Value">2021-11-15</h5>
+                </div>
+            </div>
+            <div class="Control">
+                <h1>Control</h1>
+                <div>
+                    <button id="On">On</button>
+                </div>
+                <div>
+                    <button id="Off">Off</button>
+                </div>
             </div>
         </div>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
     <script language="JavaScript" type="text/javascript" src="web.js"></script>
 </body>
