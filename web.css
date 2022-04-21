@@ -100,7 +100,7 @@
 }
 .Plot{
     margin-left: 5%;
-    margin-top: 20px;
+    margin-top: 50px;
     margin-bottom: 20px;
     width: 60%;
     height: 550px;
@@ -181,7 +181,7 @@ canvas{
 }
 .Side{
     margin-right: 5%;
-    margin-top: 0px;
+    margin-top: 30px;
     width: 25%;
     height: auto;
     float: right;
